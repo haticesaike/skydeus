@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  min-width: 60vw;
+  height: 20vh;
+  background-color: #fefefe;
+  flex-direction: row;
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.leftSide {
+  flex: 2;
+  background-color: #015fb7;
+  height: 100%;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+}
+
+.middle {
+  flex: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.rightSide {
+  flex: 2;
+  background-color: #f7a828;
+  height: 100%;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
