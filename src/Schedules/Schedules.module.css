@@ -1,15 +1,55 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 40px;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #f7a828;
+    margin-left: 25px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f7a828;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 20px;
 }
+
+.notfound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fefefe;
+}
+

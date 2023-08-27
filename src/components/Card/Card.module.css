@@ -1,33 +1,115 @@
 .container {
-  display: flex;
-  min-width: 60vw;
-  height: 20vh;
-  background-color: #fefefe;
-  flex-direction: row;
-  border-radius: 32px;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+    display: flex;
+    min-width: 40vw;
+    height: 20vh;
+    background-color: #fefefe;
+    flex-direction: row;
+    border-radius: 32px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
 }
 
 .leftSide {
-  flex: 2;
-  background-color: #015fb7;
-  height: 100%;
-  border-top-left-radius: 32px;
-  border-bottom-left-radius: 32px;
+    flex: 4;
+    background-color: #015fb7;
+    height: 100%;
+    border-top-left-radius: 32px;
+    border-bottom-left-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fefefe;
+
+}
+
+.from {
+    padding-left: 15px;
+    padding-top: 10px;
+    font-size: 2rem;
+    align-self: flex-start;
+    font-weight: 600;
+}
+
+.fromToIcon {
+    transform: rotate(90deg);
+}
+
+.to {
+    padding-right: 15px;
+    padding-bottom: 10px;
+    align-self: flex-end;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .middle {
-  flex: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
+
+.company {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #015fb7;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: .8rem;
+    font-weight: 600;
+    color: #f7a828;
+}
+
+.infoValue {
+    display: flex;
+    font-size: medium;
+    justify-content: flex-end;
+    color: #015fb7;
+}
+
 .rightSide {
-  flex: 2;
-  background-color: #f7a828;
-  height: 100%;
-  border-top-right-radius: 32px;
-  border-bottom-right-radius: 32px;
+    flex: 4;
+    background-color: #f7a828;
+    height: 100%;
+    border-top-right-radius: 32px;
+    border-bottom-right-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fefefe;
+}
+
+.priceArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceText {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #015fb7;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.flightId {
+    font-size: .7rem;
+    font-weight: 600;
+    color: #015fb7;
 }
