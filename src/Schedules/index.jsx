@@ -25,45 +25,7 @@ function Schedules() {
         setArrivalData(arrFlights);
         setDepartureData(depFlights);
     }, [location.state]);
-    const sort = (e) => {
-        if (e === "departure") {
-            const sorted = departureData.sort((a, b) => {
-                if (a.time < b.time) {
-                    return -1;
-                }
-                if (a.time > b.time) {
-                    return 1;
-                }
-                return 0;
-            });
-            setDepartureData(sorted);
 
-        }
-        if (e === "price") {
-            const sorted = departureData.sort((a, b) => {
-                if (a.price < b.price) {
-                    return 1;
-                }
-                if (a.price > b.price) {
-                    return -1;
-                }
-                return 0;
-            });
-            setDepartureData(sorted);
-        }
-        if (e === "time") {
-            const sorted = departureData.sort((a, b) => {
-                if (a.time < b.time) {
-                    return 1;
-                }
-                if (a.time > b.time) {
-                    return -1;
-                }
-                return 0;
-            });
-            setDepartureData(sorted);
-        }
-    };
     return (
         <Box className={styles.container}>
             <Box>
@@ -72,28 +34,14 @@ function Schedules() {
             <Box className={styles.area}>
                 {
                     !departureData.length > 0 &&
-                    !arrivalData.length > 0 ? (<Box>
-                            <h2 className={styles.notfound}>
-                                Aradığınız kriterlere uygun uçuş bulunamadı :/
-                            </h2>
-                            <h4 className={styles.notfound}>
-                                <Link to="/"> Ana sayfaya dön {"<"}< /Link>
-                            </h4>
-                        </Box>) :
-                        (
-                            <Box className={styles.sort}>
-                                {/*    <Select data={[
-                                    {value: "departure", label: "Kalkış Saatine Göre"},
-                                    {value: "price", label: "Fiyata Göre"},
-                                    {value: "time", label: "Süreye Göre"},
-                                ]} placeholder="Sırala" className={styles.select}
-                                        onChange={sort}
-                                />
-*/}
-                            </Box>
-
-                        )
-
+                    !arrivalData.length > 0 && (<Box>
+                        <h2 className={styles.notfound}>
+                            Aradığınız kriterlere uygun uçuş bulunamadı :/
+                        </h2>
+                        <h4 className={styles.notfound}>
+                            <Link to="/"> Ana sayfaya dön {"<"}< /Link>
+                        </h4>
+                    </Box>)
                 }
                 {
                     departureData.length > 0 && (

@@ -44,6 +44,7 @@ function HomeBody() {
                 setFromCities((prev) => [...prev, ...newFromCities]);
                 setToCities((prev) => [...prev, ...newToCities]);
             });
+
     }, []);
 
     function getIsoDateWihUTC(date) {
@@ -58,6 +59,8 @@ function HomeBody() {
         return `${localYear}-${localMonth.toString().padStart(2, '0')}-${localDay.toString().padStart(2, '0')}T${localHours.toString().padStart(2, '0')}:${localMinutes.toString().padStart(2, '0')}:${localSeconds.toString().padStart(2, '0')}`;
 
     }
+
+    if (!flightDetail.length) return (<div style={{color: "#fefefe", fontSize: 50}}>Loading...</div>);
 
     return (
         <Box className={styles.HomeBody}>
